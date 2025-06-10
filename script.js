@@ -3,13 +3,13 @@ const checkage = ()=>{
             const name = document.getElementById("name").value
 
             if(!age || !name){
-                alert("Please Enter valid Details")
+                alert("Please enter valid details.")
             }
             const prom = new Promise((res,rej)=>{
                 if(age>18){
-                   setTimeout(()=>{res(alert("Welcome . You can Vote")); location.reload()},4000)
+                   setTimeout(()=>{res(alert(`Welcome, ${name} You can vote.`));},4000)
                 }else{
-                    setTimeout(()=>{rej(alert("Oh sorry . You aren't old enough")); location.reload()},4000)
+                    setTimeout(()=>{rej(alert(`Oh sorry ${name} You aren't old enough.`));},4000)
                 }
                
             })
