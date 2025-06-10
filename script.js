@@ -1,6 +1,6 @@
  const checkage = ()=>{
-            const age = document.getElementById("age").value
-            const name = document.getElementById("name").value
+            const age = document.getElementById("age").value.trim()
+            const name = document.getElementById("name").value.trim()
 
             if(!age || !name){
                 alert("Please enter valid details.")
