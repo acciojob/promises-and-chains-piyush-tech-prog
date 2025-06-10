@@ -1,8 +1,8 @@
  const checkage = ()=>{
-            const age = document.getElementById("age").value.trim()
+            const age = parseInt(document.getElementById("age").value.trim())
             const name = document.getElementById("name").value.trim()
 
-            if(!age || !name){
+            if(!age || !name || isNaN(age)){
                 alert("Please enter valid details.")
                 return
             }
